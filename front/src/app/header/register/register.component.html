@@ -1,0 +1,56 @@
+
+<div class="container ">
+    <form class="form-horizontal">
+
+        <div class="col-md-6 col-md-offset-3 reg">
+            <div class="form-group">
+                <label for="Prefered Vendor" class="col-sm-4 control-label">first name:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="FirstName"
+                    [(ngModel)]="ayaj.FirstName" 
+                    id="FirstName" placeholder="firstname">
+
+                </div>
+            </div>
+            <div class="form-group" >
+                <label for="Vendor Billing Address" class="col-sm-4 control-label">last name:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="lname" placeholder="last name" 
+                    name="LastName" 
+                    [(ngModel)]="ayaj.LastName">
+                    
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="Vendor Billing Address" class="col-sm-4 control-label">email:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="email" placeholder="Enter-email"
+                    name="Email"
+                    [(ngModel)]="ayaj.Email">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-4 control-label">Mobile number:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="lname" placeholder="Enter-password"
+                    name="MobileNumber"
+                    [(ngModel)]="ayaj.MobileNumber">
+ 
+                </div>
+            </div>
+
+        
+
+
+            <div class="form-group">
+                <div class="col-md-offset-5">
+                    <button class="btn btn-success" type="submit" (click)="employee()">submit</button>&emsp;&emsp;
+                    <button class="btn btn-danger" type="reset">cancel</button>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

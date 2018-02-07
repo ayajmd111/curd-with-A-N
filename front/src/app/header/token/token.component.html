@@ -1,0 +1,12 @@
+<form class="col-md-5">
+  <div class="form-group">
+    <label for="email">userName:</label>
+    <input type="email" class="form-control" id="email" name="userName" [(ngModel)]="ayaj.userName">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" name="password" [(ngModel)]="ayaj.password">
+  </div>
+  
+  <button type="submit" class="btn btn-success" (click)="tokenuser()">Submit</button>
+</form>
